@@ -99,6 +99,7 @@ typedef void  (*FillTileWithTwoPointsFunc)(id, SEL, CGPoint, CGPoint);
 
 - (id)initWithFrame:(CGRect)frame image:(UIImage *)img {
     if (self = [super initWithFrame:frame]) {
+        self.image = img;
         [self initialize];
     }
     return self;
